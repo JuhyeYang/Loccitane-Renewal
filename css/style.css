@@ -6,7 +6,7 @@ main .sec01 .rec-pro-tit { font-size: 30px; margin-bottom: 40px; font-weight: 50
 main .sec01 .rec-con-group { display: flex; flex-wrap: wrap; justify-content: space-between; }
 main .sec01 .rec-con-group li { width: calc(50% - 16px); }
 
-main .sec02 { padding: 80px 0; }
+main .sec02 { padding: 80px 0; background: #f4f4f4;}
 main .sec02 .new-pro-tit { font-size: 30px; margin-bottom: 40px; font-weight: 500; }
 main .sec02 .new-con-group { display: flex; flex-wrap: wrap; justify-content: space-between; }
 main .sec02 .new-con-group li { margin-bottom: 16px; padding: 0 30px; width: calc(100% / 4); text-align: center; word-break: keep-all; }
@@ -19,7 +19,7 @@ main .sec02 .new-con-group li:last-child .price { margin-top: 10px; }
 
 main .sec03 { padding: 80px 0; }
 main .sec03 .nxt-pro-tit  { font-size: 30px; font-weight: 500; margin-bottom: 40px; }
-main .sec03 .con-box { padding: 40px; background: #e2e2e2 }
+main .sec03 .con-box { padding: 40px; background: #ecebe7 }
 main .sec03 .txt-box { width: 668px; background: rgba(122, 122, 122, 0.4); text-align: center; margin: 0 auto; color: #fff; padding: 120px 64px; }
 main .sec03 .txt-box .tit { font-size: 23px; margin-bottom: 6px; margin-bottom: 6px; }
 main .sec03 .txt-box p { font-size: 20px; line-height: 1.5;}
@@ -29,8 +29,10 @@ main .sec03 .txt-box p { font-size: 20px; line-height: 1.5;}
 
 
 @media (max-width: 768px) {
+    main {text-align: center;}
     main .sec01 .rec-con-group li { width: 100%; }
     main .sec02 .new-con-group li { width: calc(100% / 2)}
+    main .sec01 .rec-con-group li:nth-child(2) { margin-top: 30px; }
     main .sec03 .txt-box { width: 100%; }
     .pop-wrap { display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100vw; height: 100vh; background: #fff; }
     .pop-wrap.show { display: block; }

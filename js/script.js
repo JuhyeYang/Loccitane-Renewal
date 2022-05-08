@@ -15,16 +15,18 @@ $(document).ready(function () {
     });
 
 
-
     // 헤더스크롤 색상변경
     $(document).ready(function(){
         $(window).scroll(function(){
           var scroll = $(window).scrollTop();
           if (scroll > 1) {
-            $("header").css("background" , "#ffcb00");
+            $("header").addClass('active');
+            $("header .box").addClass('hide')
           }
           else{
-            $("header").css("background" , "none");   
+            $("header").removeClass('active');   
+            $("header .box").removeClass('hide')
+
           }
         })
       })
@@ -37,6 +39,8 @@ $(document).ready(function () {
     $('.close-btn').click(function () {
         $('.m-menu-pop-wrap').removeClass('show')
     })
-    
+
+
+
       
 })
